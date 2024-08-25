@@ -243,6 +243,7 @@ export default {
 	}
 
 	&__headline {
+		display: none;
 		text-align: center;
 		overflow-wrap: anywhere;
 	}
