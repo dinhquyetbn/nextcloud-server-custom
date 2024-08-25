@@ -8,7 +8,7 @@ services:
       - ..:/var/www/html
     command: /var/www/html/.devcontainer/entrypoint.sh
     ports:
-      - 80:80
+      - 5000:80
       - 8080:8080
       - 8025:8025
 
@@ -22,15 +22,15 @@ services:
       - db:/data/postgres
     network_mode: service:nextclouddev
 
-  adminer:
-    image: adminer
-    restart: always
-    network_mode: service:nextclouddev
+  # adminer:
+  #   image: adminer
+  #   restart: always
+  #   network_mode: service:nextclouddev
 
-  mailhog:
-    image: mailhog/mailhog
-    restart: always
-    network_mode: service:nextclouddev
+  # mailhog:
+  #   image: mailhog/mailhog
+  #   restart: always
+  #   network_mode: service:nextclouddev
 
 volumes:
   db:
