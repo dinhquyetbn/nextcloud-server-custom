@@ -45,11 +45,11 @@ export default {
 	props: {
 		value: {
 			type: String,
-			default: t('core', 'Log in'),
+			default: t('core', 'Đăng nhập'),
 		},
 		valueLoading: {
 			type: String,
-			default: t('core', 'Logging in …'),
+			default: t('core', 'Đang đăng nhập …'),
 		},
 		loading: {
 			type: Boolean,
@@ -66,5 +66,8 @@ export default {
 <style lang="scss" scoped>
 .button-vue {
 	margin-top: .5rem;
+	border-radius: 10px;
+    background: linear-gradient(90deg, #6782df, #29b8e9);
+	font-size: 18px;
 }
 </style>

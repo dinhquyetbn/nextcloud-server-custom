@@ -60,7 +60,7 @@
 			<h2 class="login-form__headline" data-login-form-headline v-html="headline" />
 			<NcTextField id="user"
 				ref="user"
-				:label="t('core', 'Account name or email')"
+				:label="t('core', 'Tên đăng nhập')"
 				name="user"
 				:value.sync="user"
 				:class="{shake: invalidPassword}"
@@ -79,7 +79,7 @@
 				:spellchecking="false"
 				autocapitalize="none"
 				:autocomplete="autoCompleteAllowed ? 'current-password' : 'off'"
-				:label="t('core', 'Password')"
+				:label="t('core', 'Mật khẩu')"
 				:helper-text="errorLabel"
 				:error="isError"
 				data-login-form-input-password
@@ -245,6 +245,9 @@ export default {
 	&__headline {
 		text-align: center;
 		overflow-wrap: anywhere;
+	}
+	#user, #password {
+		border: 1px solid var(--color-border-maxcontrast) !important;
 	}
 }
 </style>
