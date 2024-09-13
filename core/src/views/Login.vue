@@ -182,7 +182,7 @@ export default {
 			user: loadState('core', 'loginUsername', ''),
 			passwordlessLogin: false,
 			resetPassword: false,
-			isLoginSSO: true,
+			isLoginSSO: query.direct === '1' && query.user !== '' ? false : true,
 
 			// Initial data
 			errors: loadState('core', 'loginErrors', []),
