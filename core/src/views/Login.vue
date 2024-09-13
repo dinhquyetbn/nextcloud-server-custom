@@ -266,6 +266,9 @@ footer.guest-box {
 		justify-content: space-between;
 		background-color: #fff;
 		width: 50%;		
+		background-image: url(../../../core/img/logo/login_right.png);
+		background-size: cover;
+		// background-position: center;
 		.login-sso {
 			display: flex;
     		justify-content: center;
@@ -320,6 +323,7 @@ footer.guest-box {
 			display: flex;
 			flex-direction: column;
 			margin-bottom: 10px;
+			color: #1485CB;
 		}
 		.login-core-icon {
 			display: flex;
