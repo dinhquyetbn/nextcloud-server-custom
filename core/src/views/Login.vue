@@ -310,6 +310,7 @@ footer.guest-box {
 					}
 				}
 				.login-core {
+					max-width: 350px;
 					.login-form__headline {
 						display: none;
 					}
