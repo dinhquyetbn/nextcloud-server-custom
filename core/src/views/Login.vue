@@ -277,7 +277,7 @@ footer.guest-box {
 				flex-direction: column;
 				.sso-logo {
 					width: 350px;
-					height: 350px;
+					height: 300px;
 					background-image: url(../../../core/img/logo/logo-btttt.png);
 					background-size: contain;
 					background-position: bottom;
