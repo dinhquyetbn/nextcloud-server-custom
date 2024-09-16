@@ -30,7 +30,7 @@
 					<div class="sso-title"></div>
 					<!-- <p class="sso-description">Đăng nhập</p> -->					
 					<a v-if="isLoginSSO" class="sso-button" href="/apps/user_oidc/login/1">
-						Đăng nhập với MIC SSO
+						Đăng nhập Beta - SSO
 					</a>
 					<div  v-if="!isLoginSSO" class="login-core">
 						<template v-if="!hideLoginForm || directLogin">
@@ -136,7 +136,7 @@
 				<div>Bộ Thông tin và Truyền thông</div>
 			</div>
 			<div class="login-core-icon" @click="toggleLoginSSO">
-				<span title="Đăng nhập hệ thống"></span>
+				<span title="Đăng nhập bằng Acc nội bộ"></span>
 			</div>
 		</div>
 	</div>	
